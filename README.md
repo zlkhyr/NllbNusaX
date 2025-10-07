@@ -23,8 +23,15 @@
 - **Pooling**: Mean Pooling dengan Attention Mask
 
 $$
-\frac{ \sum_{i=1}^l m_i h_i}{\sum_{i=1}^l m_i}
+        \text{Mean Pooling(H,M)} = \frac{\sum_{i=1}^{l} m_i \cdot h_i}{\sum_{i=1}^{l} m_i}
 $$
+
+>  - **Keterangan:**
+>   - $h_i$: Hidden state dari token ke-i
+>   - $m_i$: Nilai attention mask (0 atau 1)
+>   - $l$: Panjang sequence
+>   - Pembagian dengan $\sum m_i$ untuk menghindari pembagian dengan nol <br>
+
 
 - **Classification head** : Fc layer / linear layer
 
