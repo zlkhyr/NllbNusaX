@@ -17,5 +17,14 @@
   > Embedding layer pada encoder beku (<em>frozen</em>) tidak dilatih kembali <br>
 
 <h2>Arsitektur Model</h2>
-```python
-Encoder NLLB → Mean Pooling → Dropout → Linear Classifier
+<img src="image.png" alt="Arsitektur Model" width="1024" style="border-radius: 30%;"/>
+
+- **Encoder**: Dari model NLLB
+- **Pooling**: Mean Pooling dengan Attention Mask
+
+$$
+\frac{ \sum_{i=1}^l m_i h_i}{\sum_{i=1}^l m_i}
+$$
+
+- **Classification head** : Fc layer / linear layer
+
