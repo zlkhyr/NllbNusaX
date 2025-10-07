@@ -27,6 +27,8 @@ $$
 $$
 
 >  - **Keterangan:**
+>  - 	$H:{(h_1,h_2,…,h_l)}$ adalah representasi fitur dari model, dimana $h_i∈R^d$ 
+>  - $M:{(m_1,m_2,…,m_l)}$ adalah attention mask, dimana $m_i∈{0,1}$  
 >   - $h_i$: Hidden state dari token ke-i
 >   - $m_i$: Nilai attention mask (0 atau 1)
 >   - $l$: Panjang sequence
@@ -35,3 +37,8 @@ $$
 
 - **Classification head** : Fc layer / linear layer
 
+<h2>Konfigurasi pelatihan</h2>
+-
+  -
+  -
+-
